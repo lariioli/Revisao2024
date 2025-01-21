@@ -1,7 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System;
+using System.IO;
 
-public class Program
+class Program
 {
     public static void Main()
 }
