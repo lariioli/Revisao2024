@@ -1,5 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-using System;
+﻿using System;
 using System.IO;
 
 class Program
@@ -10,6 +9,15 @@ class Program
 
         Console.Write( "Informe o tamanho da Senha: ");
         int tamanho = int.Parse(Consolole.ReadLine());
+
+        Console.Write( "Incluir letras? (s/n): ");
+        bool incluirLetras = Console.ReadLine().ToLower() == "s";
+
+        Console.Write( "Incluir caracteres especiais? (s/n): ");
+        bool incluirCaracteres = Console.ReadLine().ToLower() == "s";
+
+
+
 
     }
 }
