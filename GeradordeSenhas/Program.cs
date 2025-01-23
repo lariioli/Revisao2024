@@ -34,4 +34,60 @@ class Program
         {
             RecuperarSenhas();
         }
+        Console.ForegroundColor = ConsoleColor.Magenta;
+        Console.WriteLine("Programa encerrado.");
+        Console.ResetColor();
+    }
+
+    static string GerarSenha(int tamanho, bool incluirLetras, bool incluirEspeciais)
+    {
+        string numeros = "0123456789";
+        string letras = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        string especiais = "@#$%&*";
+        string caracteres = numeros;
+
+        if (incluirLetras) caracteres += letras;
+        if (incluirEspeciais) caracteres += especiais;
+
+        Random random = new Random();
+        string senha = "";
+        for (int i = 0; i < tamanho; i++)
+        {
+            senha += caracteres[random.Next(caracteres.Length)];
+        }
+
+        return senha;
+    }
+
+    static void SalvarSenha(string senha)
+    {
+        string caminho = "bkp.TXT";
+        File.AppendAllText(caminho, senha + Environment.NewLine);
+    }
+
+    static void RecuperarSenhas()
+    {
+        string caminho = "bkp.TXT";
+
+        if (File.Exists(caminho))
+        {
+            string[] senhas = File.ReadAllLines(caminho);
+
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("Senhas salvas:");
+            foreach (string senha in senhas)
+            {
+                Console.WriteLine(senha);
+            }
+            Console.ResetColor();
+        }
+        else
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("Nenhuma senha encontrada.");
+            Console.ResetColor();
+        }
+    }
+}
+
 
