@@ -4,5 +4,12 @@ using System.IO;
 
 class Program
 {
-    public static void Main()
+    static void Main()
+    {
+        Console.WriteLine( "=== Gerador de Senhas ===");
+
+        Console.Write( "Informe o tamanho da Senha: ");
+        int tamanho = int.Parse(Consolole.ReadLine());
+
+    }
 }
