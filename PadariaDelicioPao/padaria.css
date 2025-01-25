@@ -1,7 +1,11 @@
 
-
-
-
+body {
+    background-color: #FFF8E7; 
+    color: #5A3921; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
 .cursive-text {
     font-family: "Dancing Script", cursive;
@@ -20,3 +24,25 @@
     padding: 10px;
     border-radius: 5px;
 }
+
+.footer {
+    background-color: #8B4513; 
+    color: #FFF;
+    padding-top: 20px;
+}
+
+.footer h5 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.footer p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.footer hr {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
