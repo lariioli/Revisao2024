@@ -1,3 +1,32 @@
+.navbar-custom {
+    background-color: #8B4513; 
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: #FFF; 
+}
+
+.navbar-custom .nav-link:hover {
+    color: #FFD700; 
+}
+
+.search-bar {
+    width: 250px;
+}
+
+.dropdown-menu {
+    background-color: #8B4513; 
+}
+
+.dropdown-menu .dropdown-item {
+    color: #FFF;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #FFD700;
+    color: #000;
+}
 
 body {
     background-color: #FFF8E7; 
@@ -23,6 +52,10 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
     border-radius: 5px;
+}
+
+.carousel {
+    margin-bottom: 50px;
 }
 
 .footer {

@@ -8,11 +8,53 @@
         <link rel="stylesheet" href="padaria.css">
     </head>
     <body>
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container">
+                <!-- Links à Esquerda -->
+                <div class="d-flex align-items-center">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#inicio">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#produtos">Produtos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Categorias
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#bebidas">Bebidas</a></li>
+                                <li><a class="dropdown-item" href="#bolos">Bolos</a></li>
+                                <li><a class="dropdown-item" href="#paes">Pães</a></li>
+                                <li><a class="dropdown-item" href="#salgados">Salgados</a></li>
+                                <li><a class="dropdown-item" href="#doces">Doces</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Logo Centralizada -->
+                <a class="navbar-brand mx-auto" href="index.html">
+                    <img src="img/Delicio.png" alt="Logo" height="150">
+
+                </a>
+
+                <!-- Barra de Pesquisa -->
+                <form class="d-flex ms-auto">
+                    <input class="form-control search-bar me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Pesquisar</button>
+                </form>
+            </div>
+        </nav>
         <header class="header text-center py-5">
             <h1 class="cursive-text">Bem-vindo à Delicio Pão</h1>
         </header>
         <main class="container mt-4">
-            <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div id="productCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="img/Pãodequeijo.jpg" class="d-block w-100" alt="Produto 1">
