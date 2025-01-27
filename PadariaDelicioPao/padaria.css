@@ -86,3 +86,7 @@ body {
     object-fit: cover; 
 }
 
+.main-content {
+    margin-bottom: 100px;
+}
+
